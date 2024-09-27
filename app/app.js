@@ -1,5 +1,5 @@
 import { serve } from "./deps.js";
-import { configure, renderFile } from "https://deno.land/x/eta@v2.2.0/mod.ts";
+import { configure, renderFile } from "./deps.js";
 import * as messageService from "./services/messageService.js";
 
 configure({
