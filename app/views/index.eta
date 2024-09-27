@@ -1,0 +1,15 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Lets Chat</h1>
+<form method="POST">
+Enter name: <input type="text" name="sender"/></br>
+Enter message: <input type="text" name="message"/></br>
+<input type=submit value="Submit" />
+</form>
+
+<h2>Your recent chat</h2>
+<ul>
+<% it.messages.forEach(message=>{%>
+<li><%= message.sender%>: <%=message.message%></li></br>
+<%});%>
+</ul>
