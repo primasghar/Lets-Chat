@@ -10,4 +10,4 @@ RUN deno cache deps.js
 
 COPY . .
 
-CMD [ "run", "--allow-all, --watch", "app.js" ]
+CMD [ "run", "-A", "app.js" ]
